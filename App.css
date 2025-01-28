@@ -1,0 +1,79 @@
+/* App.css */
+
+/* Basic styling for the app container */
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the heading */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for the textarea */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  /* Allows vertical resizing only */
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+/* Styling for the button */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Styling for error messages */
+p {
+  margin: 10px 0;
+}
+
+p[style*="color: red"] {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styling for translated text section */
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+pre {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  /* Maintains whitespace formatting */
+}
